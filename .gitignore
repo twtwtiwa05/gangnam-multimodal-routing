@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# Data files (too large for GitHub)
+202303_GTFS_DataSet/
+cleaned_gtfs_data/
+gangnam_raptor_data/*.pkl
+gangnam_road_network.pkl
+gangnam_road_network.graphml
+
+# Temporary files
+*.tmp
+*.log
+.DS_Store
+.idea/
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Large data files
+*.csv
+!requirements.txt
+!grid_virtual_stations/*.csv
+
+# Generated visualizations
+*.png
+!grid_virtual_stations/*.png
+
+# Swap files
+*.swp
+*.swo
+
+# Test outputs
+test_*.txt
+debug_*.txt

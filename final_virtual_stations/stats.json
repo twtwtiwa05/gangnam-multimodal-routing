@@ -1,0 +1,14 @@
+{
+  "total_stations": 844,
+  "by_type": {
+    "kickboard": {
+      "stations": 151,
+      "vehicles": 500
+    },
+    "bike": {
+      "stations": 693,
+      "vehicles": 5138
+    }
+  },
+  "total_vehicles": 5638
+}

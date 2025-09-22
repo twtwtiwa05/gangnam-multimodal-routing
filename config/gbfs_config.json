@@ -1,0 +1,49 @@
+{
+    "update_frequency": "60s",
+    "providers": [
+        {
+            "name": "seoul_bike",
+            "display_name": "따릉이",
+            "type": "station-based",
+            "data_source": "seoul_bike_data.csv",
+            "headers": {},
+            "allow_keeping_at_destination": false,
+            "must_return_to_station": true,
+            "virtual_stop_prefix": "BIKE",
+            "stop_type": 5,
+            "route_type": 10,
+            "speed_kmh": 15.0,
+            "cost_per_minute": 200
+        },
+        {
+            "name": "swing",
+            "display_name": "스윙",
+            "type": "free-floating",
+            "data_source": "gangnam_pm_data/gangnam_kickboard_locations.csv",
+            "headers": {},
+            "geofencing_zones": true,
+            "allow_keeping_at_destination": true,
+            "must_return_to_station": false,
+            "virtual_stop_prefix": "KICK",
+            "stop_type": 6,
+            "route_type": 11,
+            "speed_kmh": 20.0,
+            "cost_unlock": 1000,
+            "cost_per_minute": 150,
+            "battery_consumption_per_km": 2.0
+        }
+    ],
+    "virtual_stop_config": {
+        "max_connection_distance": 500,
+        "walking_speed_ms": 1.33,
+        "clustering_config": {
+            "free_floating_cluster_size": 100,
+            "min_vehicles_per_cluster": 3
+        }
+    },
+    "integration_config": {
+        "merge_nearby_stations": true,
+        "merge_distance_meters": 50,
+        "update_cache_ttl": 300
+    }
+}

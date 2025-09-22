@@ -1,0 +1,8 @@
+{
+  "n_stations": 50,
+  "n_kickboards": 500,
+  "avg_kickboards_per_station": 10.0,
+  "max_demand": 78,
+  "total_demand": 1270,
+  "grid_size_m": 100
+}
